@@ -5,9 +5,6 @@ import StatsCards from "@/features/home/components/StatsCards";
 import Footer from "@/features/home/components/Footer";
 
 export default function LandingPage() {
-  // Assuming keys are defined in your messages JSON under a 'Landing' namespace
-  const t = useTranslations("Landing");
-
   return (
     <section className={`bg-black min-h-screen`}>
       {/* Header */}

@@ -1,1 +1,25 @@
-{}
+{
+  "Header": {
+    "logoText": "STCK.",
+    "signIn": "Sign-in"
+  },
+  "Hero": {
+    "title": "Inventory management for modern businesses",
+    "description": "Real-time visibility. Data-driven decisions. Built for teams that move fast.",
+    "getStarted": "Get started",
+    "seeMore": "See More"
+  },
+  "StatsCards": {
+    "trackEverythingTitle": "Track Everything",
+    "trackEverythingDesc": "Monitor stock levels across multiple warehouses in real-time",
+    "analyticsTitle": "Analytics",
+    "analyticsDesc": "Get insights on inventory turnover and stock movement patterns",
+    "supplierManagementTitle": "Supplier Management",
+    "supplierManagementDesc": "Manage relationships and orders with all your suppliers",
+    "enterpriseSecurityTitle": "Enterprise Security",
+    "enterpriseSecurityDesc": "SOC 2 compliant with role-based access control"
+  },
+  "Footer": {
+    "rights": "All rights reserved."
+  }
+}

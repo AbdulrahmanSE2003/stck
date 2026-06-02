@@ -1,1 +1,25 @@
-{}
+{
+  "Header": {
+    "logoText": ".STCK",
+    "signIn": "تسجيل الدخول"
+  },
+  "Hero": {
+    "title": "إدارة المخزون للشركات الحديثة",
+    "description": "رؤية فورية. قرارات مدعومة بالبيانات. صُمم لفرق العمل التي تتحرك بسرعة.",
+    "getStarted": "ابدأ الآن",
+    "seeMore": "عرض المزيد"
+  },
+  "StatsCards": {
+    "trackEverythingTitle": "تتبع كل شيء",
+    "trackEverythingDesc": "مراقبة مستويات المخزون عبر مستودعات متعددة في الوقت الفعلي",
+    "analyticsTitle": "التحليلات",
+    "analyticsDesc": "احصل على رؤى حول معدل دوران المخزون وأنماط حركة السلع",
+    "supplierManagementTitle": "إدارة الموردين",
+    "supplierManagementDesc": "إدارة العلاقات والطلبات مع جميع الموردين الخاصين بك",
+    "enterpriseSecurityTitle": "أمان المؤسسات",
+    "enterpriseSecurityDesc": "متوافق مع معايير SOC 2 مع التحكم في الوصول القائم على الأدوار"
+  },
+  "Footer": {
+    "rights": "جميع الحقوق محفوظة."
+  }
+}
