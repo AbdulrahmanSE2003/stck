@@ -6,6 +6,7 @@
 
 @theme inline {
   --color-main-teal: var(--main-teal);
+  --color-sec-teal: var(--sec-teal);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
@@ -51,6 +52,7 @@
 
 :root {
   --main-teal: oklch(73.052% 0.14996 160.241);
+  --sec-teal: oklch(58.37% 0.12273 159.625);
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);

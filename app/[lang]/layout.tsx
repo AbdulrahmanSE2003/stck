@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import { locales, Locale } from "@/i18n/request";
+import { locales } from "@/i18n/request";
 import { Google_Sans } from "next/font/google";
 import "@/app/[lang]/globals.css";
 import { cn } from "@/lib/utils";
