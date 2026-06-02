@@ -1,14 +1,15 @@
 import { ReactNode } from "react";
-import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { locales, Locale } from "@/i18n/request";
-import "@/app/globals.css";
-import { Geist } from "next/font/google";
+import { Google_Sans } from "next/font/google";
+import "@/app/[lang]/globals.css";
 import { cn } from "@/lib/utils";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
-
+const googlSans = Google_Sans({
+  subsets: ["latin"],
+  variable: "--font-sf-pro",
+});
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -25,16 +26,16 @@ export default async function RootLayout({
 }: RootLayoutProps) {
   const { lang } = await params;
 
-  if (!locales.includes(lang as Locale)) {
-    notFound();
-  }
-
   const direction = lang === "ar" ? "rtl" : "ltr";
   const messages = await getMessages();
 
   return (
-    <html lang={lang} dir={direction} className={cn("font-sans", geist.variable)}>
-      <body className="bg-background text-foreground antialiased minimal-scrollbar">
+    <html
+      lang={lang}
+      dir={direction}
+      className={cn("font-sans", googlSans.className)}
+    >
+      <body className="bg-background min-h-screen text-white antialiased minimal-scrollbar">
         <NextIntlClientProvider messages={messages} locale={lang}>
           {children}
         </NextIntlClientProvider>
