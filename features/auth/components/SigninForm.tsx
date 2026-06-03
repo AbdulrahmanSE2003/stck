@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import Input from "@/components/ui/Input";
 import { signInWithEmail } from "@/lib/auth/sign-in/actions";
 import { useLocale, useTranslations } from "next-intl";
+import Link from "next/link";
 import { useActionState } from "react";
 
 const formInputs = [
@@ -58,6 +59,17 @@ const SigninForm = () => {
       >
         {isPending ? t("signing-in") : t("sign-in")}
       </Button>
+      <p
+        className={`text-xs font-light text-center tracking-wider flex items-center gap-1 justify-center`}
+      >
+        {t("sign-up-forward")}
+        <Link
+          className={`font-semibold text-main-teal hover:underline underline-offset-4`}
+          href={"/sign-up"}
+        >
+          {t("sign-up")}
+        </Link>
+      </p>
     </form>
   );
 };

@@ -33,6 +33,8 @@
     "sign-in": "Sign in",
     "signing-in": "Signing in",
     "sign-up": "Sign up",
-    "signing-up": "Signing up"
+    "signing-up": "Signing up",
+    "sign-up-forward": "You don't have an account yet",
+    "sign-in-forward": "Have an account already"
   }
 }
