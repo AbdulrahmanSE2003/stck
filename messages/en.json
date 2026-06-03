@@ -22,7 +22,7 @@
   "Footer": {
     "rights": "All rights reserved."
   },
-  "SignIn": {
+  "Auth": {
     "signIn": "Sign in to your account",
     "intro": "Enter your credentials to continue",
     "email": "Email",
