@@ -3,10 +3,12 @@
 import { Button } from "@/components/ui/button";
 import Input from "@/components/ui/Input";
 import { signInWithEmail } from "@/lib/auth/sign-in/actions";
+import { SignUpWithEmail } from "@/lib/auth/sign-up/actions";
 import { useTranslations } from "next-intl";
 import { useActionState } from "react";
 
 const formInputs = [
+  { name: "name", type: "text", placeholder: "John Doe", label: "name" },
   {
     name: "email",
     type: "email",
@@ -23,7 +25,7 @@ const formInputs = [
 
 const SigninForm = () => {
   const t = useTranslations("Auth");
-  const [state, formAction, isPending] = useActionState(signInWithEmail, null);
+  const [state, formAction, isPending] = useActionState(SignUpWithEmail, null);
 
   return (
     <form
@@ -53,7 +55,7 @@ const SigninForm = () => {
         disabled={isPending}
         className="bg-main-teal/85 cursor-pointer text-black py-2 text-xs tracking-wider uppercase font-bold hover:bg-main-teal transition-colors duration-200"
       >
-        {isPending ? t("signing-in") : t("sing-in")}
+        {isPending ? t("signing-up") : t("sign-up")}
       </Button>
     </form>
   );

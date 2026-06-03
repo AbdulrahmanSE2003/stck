@@ -3,13 +3,14 @@
 import { auth } from "@/lib/auth/auth";
 import { redirect } from "next/navigation";
 
-export async function signInWithEmail(
+export async function SignUpWithEmail(
   _prevState: { error: string } | null,
   formData: FormData,
 ) {
-  const { error } = await auth.signIn.email({
+  const { error } = await auth.signUp.email({
     email: formData.get("email") as string,
     password: formData.get("password") as string,
+    name: formData.get("name") as string,
   });
 
   if (error) {

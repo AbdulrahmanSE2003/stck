@@ -25,9 +25,13 @@
   "Auth": {
     "signIn": "Sign in to your account",
     "intro": "Enter your credentials to continue",
+    "name": "Name",
+    "name-place": "عمر أحمد",
     "email": "Email",
     "password": "Password",
-    "action": "Sign in",
-    "action-running": "Signing in"
+    "sign-in": "Sign in",
+    "signing-in": "Signing in",
+    "sign-up": "Sign up",
+    "signing-up": "Signing up"
   }
 }
