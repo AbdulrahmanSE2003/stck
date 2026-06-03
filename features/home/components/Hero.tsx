@@ -21,7 +21,7 @@ const Hero = () => {
           size="lg"
           className="bg-main-teal/85 text-md px-4 py-5 text-black hover:bg-sec-teal group"
         >
-          <Link href="/dashboard" className="flex items-center gap-2">
+          <Link href="/sign-up" className="flex items-center gap-2">
             <span>{t("getStarted")}</span>
             <ArrowUpRightIcon className="group-hover:rotate-45 transition-transform duration-500 size-5" />
           </Link>

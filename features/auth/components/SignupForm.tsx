@@ -2,9 +2,8 @@
 
 import { Button } from "@/components/ui/button";
 import Input from "@/components/ui/Input";
-import { signInWithEmail } from "@/lib/auth/sign-in/actions";
 import { SignUpWithEmail } from "@/lib/auth/sign-up/actions";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useActionState } from "react";
 
 const formInputs = [
@@ -24,6 +23,8 @@ const formInputs = [
 ];
 
 const SigninForm = () => {
+  const lang = useLocale();
+
   const t = useTranslations("Auth");
   const [state, formAction, isPending] = useActionState(SignUpWithEmail, null);
 
@@ -34,8 +35,9 @@ const SigninForm = () => {
     >
       <div className={`flex flex-col gap-2`}>
         <h2 className="text-xl font-semibold ">{t("signIn")}</h2>
-        <p className={`paragraph text-[13px]`}>{t("intro")}</p>
+        <p className={`paragraph text-[13px]`}>{t("intro-signup")}</p>
       </div>
+      <input type="hidden" value={lang} name="lang" />
       {formInputs.map((ip) => (
         <Input
           key={ip.name}

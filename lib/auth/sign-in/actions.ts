@@ -16,6 +16,8 @@ export async function signInWithEmail(
     return { error: error.message || "Authentication trace failed" };
   }
 
+  const lang = formData.get("lang") as string;
+
   // Route back to base localization interface on validation success
-  redirect("/dashboard", "replace");
+  redirect(`/${lang}/dashboard`);
 }

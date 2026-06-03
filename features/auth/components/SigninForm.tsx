@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import Input from "@/components/ui/Input";
 import { signInWithEmail } from "@/lib/auth/sign-in/actions";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useActionState } from "react";
 
 const formInputs = [
@@ -22,6 +22,7 @@ const formInputs = [
 ];
 
 const SigninForm = () => {
+  const lang = useLocale();
   const t = useTranslations("Auth");
   const [state, formAction, isPending] = useActionState(signInWithEmail, null);
 
@@ -34,6 +35,8 @@ const SigninForm = () => {
         <h2 className="text-xl font-semibold ">{t("signIn")}</h2>
         <p className={`paragraph text-[13px]`}>{t("intro")}</p>
       </div>
+      <input type="hidden" value={lang} name="lang" />
+
       {formInputs.map((ip) => (
         <Input
           key={ip.name}
@@ -53,7 +56,7 @@ const SigninForm = () => {
         disabled={isPending}
         className="bg-main-teal/85 cursor-pointer text-black py-2 text-xs tracking-wider uppercase font-bold hover:bg-main-teal transition-colors duration-200"
       >
-        {isPending ? t("signing-in") : t("sing-in")}
+        {isPending ? t("signing-in") : t("sign-in")}
       </Button>
     </form>
   );
