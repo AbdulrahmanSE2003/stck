@@ -131,4 +131,8 @@
   html {
     @apply font-sans;
   }
+
+  .paragraph {
+    @apply text-zinc-400 tracking-wider;
+  }
 }

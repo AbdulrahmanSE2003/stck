@@ -11,7 +11,7 @@ const Hero = () => {
       <h1 className="tracking-wide text-4xl font-semibold max-w-2xl">
         {t("title")}
       </h1>
-      <p className="text-zinc-400 tracking-wider text-lg max-w-md sm:max-w-lg">
+      <p className="paragraph text-lg max-w-md sm:max-w-lg">
         {t("description")}
       </p>
 

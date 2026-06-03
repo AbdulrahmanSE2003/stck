@@ -21,5 +21,13 @@
   },
   "Footer": {
     "rights": "All rights reserved."
+  },
+  "SignIn": {
+    "signIn": "Sign in to your account",
+    "intro": "Enter your credentials to continue",
+    "email": "Email",
+    "password": "Password",
+    "action": "Sign in",
+    "action-running": "Signing in"
   }
 }
